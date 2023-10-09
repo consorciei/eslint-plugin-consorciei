@@ -1,5 +1,9 @@
 {
   "name": "eslint-plugin-consorciei",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/consorciei/eslint-plugin-consorciei.git"
+  },
   "version": "0.0.0",
   "description": "eslint for consorciei",
   "keywords": [
@@ -11,11 +15,7 @@
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "scripts": {
-    "lint": "npm-run-all \"lint:*\"",
-    "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
-    "lint:js": "eslint .",
-    "test": "mocha tests --recursive",
-    "update:eslint-docs": "eslint-doc-generator"
+    "test": "mocha tests --recursive"
   },
   "dependencies": {
     "requireindex": "^1.2.0"
@@ -34,9 +34,5 @@
   "peerDependencies": {
     "eslint": ">=7"
   },
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/consorciei/eslint-plugin-consorciei.git"
-  }
+  "license": "ISC"  
 }
