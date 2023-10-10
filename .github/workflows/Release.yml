@@ -1,4 +1,4 @@
-name: Continuous Deploy on Merge
+name: Release a new version
 
 on: 
   workflow_dispatch:
