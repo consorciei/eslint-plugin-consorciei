@@ -1,6 +1,12 @@
 name: Continuous Deploy on Merge
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Semantic version'
+        required: true
+        type: string
 
 jobs:
   build-push:
