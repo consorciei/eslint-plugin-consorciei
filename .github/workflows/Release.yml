@@ -1,15 +1,9 @@
 name: Release a new version
 
-on: 
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Semantic version'
-        required: true
-        type: string
+on: workflow_dispatch
 
 jobs:
-  build-push:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -37,4 +31,11 @@ jobs:
       - run: npm publish --tag ${{ inputs.version }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - id: publish
+        uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          registry: "https://npm.pkg.github.com"
+      - if: ${{ steps.publish.outputs.type }}
+        run: echo "Version changed!"
  

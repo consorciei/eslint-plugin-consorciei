@@ -9,7 +9,7 @@ on:
         type: string
 
 jobs:
-  build-push:
+  delete:
     runs-on: ubuntu-latest
     permissions:
       contents: read
