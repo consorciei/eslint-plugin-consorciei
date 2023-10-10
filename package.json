@@ -4,6 +4,9 @@
     "type": "git",
     "url": "https://github.com/consorciei/eslint-plugin-consorciei.git"
   },
+  "publishConfig": {
+    "@consorciei:registry": "https://npm.pkg.github.com"
+  },
   "version": "0.0.0",
   "description": "eslint for consorciei",
   "keywords": [
