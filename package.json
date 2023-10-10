@@ -7,7 +7,7 @@
   "publishConfig": {
     "@consorciei:registry": "https://npm.pkg.github.com"
   },
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "eslint for consorciei",
   "keywords": [
     "eslint",
