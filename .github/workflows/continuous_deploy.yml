@@ -34,7 +34,7 @@ jobs:
           node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
           scope: '@consorciei'
       - run: npm ci
-      - run: npm publish
+      - run: npm publish --tag ${{ inputs.version }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
