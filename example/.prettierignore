@@ -1,0 +1,14 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+# Ignore artifacts:
+build
+coverage
+
+# Ignore all extension files:
+**/*.json
+**/*.yml
+**/*.md
+**/*.prettierrc
