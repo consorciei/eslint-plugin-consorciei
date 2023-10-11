@@ -1,5 +1,5 @@
 {
-  "name": "@consorciei/eslint-plugin-consorciei",
+  "name": "eslint-plugin-consorciei",
   "repository": {
     "type": "git",
     "url": "https://github.com/consorciei/eslint-plugin-consorciei.git"
