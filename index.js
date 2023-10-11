@@ -9,7 +9,9 @@
 //------------------------------------------------------------------------------
 
 module.exports = {
-  parser: "@typescript-eslint/parser",
+  globals: {
+    consorciei: true,
+  },
   plugins: ["@typescript-eslint", "import", "sonarjs"],
   extends: [
     "eslint:recommended",
@@ -19,7 +21,7 @@ module.exports = {
     "plugin:sonarjs/recommended",
   ],
   env: {
-    "node": true
+    node: true,
   },
   rules: {
     curly: "error",
