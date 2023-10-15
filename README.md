@@ -10,6 +10,13 @@
 ## How to use
 See example folder
 
+## References
+- [recommended-type-checked](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/recommended-type-checked.ts)
+- [stylistic-type-checked](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/stylistic-type-checked.ts)
+- [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript)
+- [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import/tree/main#typescript)
+- [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
+
 ## FAQ
 
 #### Why not integrate with prettier?
@@ -22,5 +29,6 @@ just add on your `.eslintrc.js`:
 module.exports = {
   extends: ['@consorciei/react']
 }
-
 ```
+
+
