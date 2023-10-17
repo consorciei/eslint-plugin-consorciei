@@ -1,8 +1,13 @@
 module.exports = {
   extends: ['@consorciei'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: true,
+    project: 'tsconfig.json',
     tsconfigRootDir: __dirname,
   },
-  root: true,
-}
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
+};
