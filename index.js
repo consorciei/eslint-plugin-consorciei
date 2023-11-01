@@ -12,7 +12,7 @@ module.exports = {
   globals: {
     consorciei: true,
   },
-  plugins: ["@typescript-eslint", "import", "sonarjs"],
+  plugins: ["@typescript-eslint", 'eslint-plugin-tsdoc', "import", "sonarjs"],
   extends: [
     "eslint:recommended",
     "plugin:import/recommended",
@@ -26,7 +26,7 @@ module.exports = {
   },
   rules: {
     curly: "error",
-    "import/no-unresolved": "error",
+    "tsdoc/syntax": "warn", // eslint-plugin-tsdoc
     "no-console": ["error", { allow: ["warn", "error"] }],
     "import/order": [
       "error",
@@ -38,6 +38,6 @@ module.exports = {
           caseInsensitive: true,
         },
       },
-    ],
+    ], // plugin:import/recommended
   },
 };
