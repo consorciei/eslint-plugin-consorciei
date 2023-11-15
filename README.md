@@ -32,6 +32,7 @@ See example folder
 - [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript)
 - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import/tree/main#typescript)
 - [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
+- [eslint-plugin-tsdoc](https://github.com/microsoft/tsdoc/tree/main/eslint-plugin)
 
 ## FAQ
 
@@ -40,7 +41,7 @@ See example folder
 
 
 #### What about react lint
-just add on your `.eslintrc.js`:
+just change on your `.eslintrc.js`:
 ```js
 module.exports = {
   extends: ['@consorciei/react']

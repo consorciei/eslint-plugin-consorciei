@@ -27,7 +27,6 @@ module.exports = {
   },
   rules: {
     curly: "error",
-    "import/no-unresolved": "error",
     "no-console": ["error", { allow: ["warn", "error"] }],
     "import/order": [
       "error",
@@ -39,9 +38,8 @@ module.exports = {
           caseInsensitive: true,
         },
       },
-    ],
-    "react/react-in-jsx-scope": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "off",
+    ], // plugin:import/recommended
+    "react/react-in-jsx-scope": "off", // plugin:react/recommended
+    "react-hooks/exhaustive-deps": "off", // plugin:react-hooks/recommended
   },
 };

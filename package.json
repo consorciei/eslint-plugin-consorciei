@@ -7,7 +7,7 @@
   "publishConfig": {
     "@consorciei:registry": "https://npm.pkg.github.com"
   },
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "eslint for consorciei",
   "keywords": [
     "eslint",
@@ -27,7 +27,8 @@
     "eslint-plugin-import": ">=2",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-sonarjs": ">=0.10"
+    "eslint-plugin-sonarjs": ">=0.10",
+    "eslint-plugin-tsdoc": "^0.2.17"
   },
   "devDependencies": {
     "eslint": ">=7",
