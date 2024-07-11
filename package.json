@@ -7,7 +7,7 @@
   "publishConfig": {
     "@consorciei:registry": "https://npm.pkg.github.com"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "eslint for consorciei",
   "keywords": [
     "eslint",
@@ -21,26 +21,26 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": ">=6",
-    "@typescript-eslint/parser": ">=6",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": ">=2",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-sonarjs": ">=0.10",
-    "eslint-plugin-tsdoc": "^0.2.17"
+    "@typescript-eslint/eslint-plugin": "7.16.0",
+    "@typescript-eslint/parser": "7.16.0",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-react": "7.34.3",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-sonarjs": "1.0.3",
+    "eslint-plugin-tsdoc": "0.3.0"
   },
   "devDependencies": {
-    "eslint": ">=7",
-    "mocha": "^10.0.0",
-    "typescript": "^5.2.2"
+    "eslint": "8.57.0",
+    "mocha": "10.6.0",
+    "typescript": "5.5.3"
   },
   "engines": {
-    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+    "node": "^14.17.0 || ^16.0.0 || ^18.0.0 || ^20.11"
   },
   "peerDependencies": {
-    "eslint": ">=7",
-    "typescript": ">=4"
+    "eslint": "^8.57.0",
+    "typescript": "^5"
   },
   "eslintConfig": {
     "extends": "."
