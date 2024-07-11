@@ -19,7 +19,7 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
-    "plugin:sonarjs/recommended",
+    "plugin:sonarjs/recommended-legacy",
   ],
   env: {
     node: true,
